@@ -1,0 +1,11 @@
+schema:
+  - https://api.spacex.land/graphql/
+#client side queries to be modeled
+documents:
+  - src/**/*.graphql
+generates:
+  ./src/app/services/spacex-graphql.service.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-apollo-angular
